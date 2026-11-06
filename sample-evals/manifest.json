@@ -43,7 +43,7 @@
         "latch://338028488.node",
         "latch://344475019.node"
       ],
-      "path": "problems/abat_4351"
+      "path": "sample-evals/abat_4351"
     },
     {
       "id": "pla2g6_4625",
@@ -79,7 +79,7 @@
         "latch://338028488.node",
         "latch://344494996.node"
       ],
-      "path": "problems/pla2g6_4625"
+      "path": "sample-evals/pla2g6_4625"
     }
   ]
 }
