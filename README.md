@@ -4,4 +4,4 @@ RareDiseaseBench tests whether AI agents can integrate clinical, multiomic, and 
 
 This repo contains 2 sample tasks that closely resemble and were built alongside the the benchmark tasks, but were removed from the benchmark to release as public examples. 
 
-The RareDiseaseBench live leaderboard will be hosted at [benchmarks.bio/raredisease](benchmarks.bio/raredisease)
+The RareDiseaseBench live leaderboard will be hosted at [benchmarks.bio/raredisease](https://benchmarks.bio/raredisease).
