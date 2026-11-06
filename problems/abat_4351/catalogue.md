@@ -1,0 +1,177 @@
+# Catalogue
+
+One section per item. The heading is the uuid. Lists are separated by semicolons.
+An empty value or a missing bullet means the field is unset.
+
+## brain_mri
+
+- storage_location: 344475019/abat_4351/brain_mri.png
+- runtime_location: brain_mri.png
+- file_description: Brain MRI at 17 months: one image with three axial slices (C diffusion-weighted, D apparent diffusion coefficient map, E T2 FLAIR), with arrows; on request.
+- aliases: brain MRI; MRI images; brain imaging; neuroimaging
+
+## plasma_metabolomics
+
+- storage_location: 344475019/abat_4351/plasma_metabolomics.md
+- runtime_location: plasma_metabolomics.md
+- file_description: Untargeted metabolomic profiling of EDTA plasma: every named compound with a Z-score for this sample against a pediatric reference population. An order for untargeted, global or clinical metabolomics, or broad small-molecule profiling, of plasma or blood maps here, and so does an order for untargeted metabolomics that names no sample type. An order for a single targeted test (e.g., plasma amino acids, acylcarnitines, lactate or urine organic acids) does not map here, and neither does a urine or CSF order.
+- aliases: plasma metabolomics; untargeted plasma metabolomics; global metabolomic profiling of plasma; clinical metabolomics; untargeted metabolomics; metabolomic screening of blood
+
+## urine_metabolomics
+
+- storage_location: 344475019/abat_4351/urine_metabolomics.md
+- runtime_location: urine_metabolomics.md
+- file_description: Untargeted metabolomic profiling of urine, with Z-scores normalized to creatinine against a pediatric reference population. An order for untargeted, global or clinical metabolomics of urine maps here. An order for urine organic acids, urine amino acids or another single targeted urine test does not map here.
+- aliases: urine metabolomics; untargeted urine metabolomics; global metabolomic profiling of urine; urine small-molecule profiling
+
+## brain_mrs
+
+- storage_location: 344475019/abat_4351/brain_mrs.png
+- runtime_location: brain_mrs.png
+- justification_required: names a suspected disorder of GABA metabolism (e.g., GABA-transaminase deficiency or succinic semialdehyde dehydrogenase deficiency), or a raised GABA-related compound or a candidate ABAT variant found in an earlier result, as the reason to look at the brain by MR spectroscopy
+- file_description: Brain proton MR spectroscopy of the basal ganglia of the patient, with his older sister and age-matched controls for comparison: one image, a chart of the measured GABA with its legend below. Any order for brain MR spectroscopy (proton MRS), whatever metabolite it asks about, maps here, and so does an order to measure GABA in the brain.
+- aliases: brain MR spectroscopy; proton MRS; 1H-MRS; magnetic resonance spectroscopy of the brain; brain GABA by MR spectroscopy; GABA-edited MRS; MRS for a lactate peak
+
+## sister_brain_mri
+
+- storage_location: 344475019/abat_4351/sister_brain_mri.png
+- runtime_location: sister_brain_mri.png
+- file_description: Brain MRI of the patient's older sister, who had a similar illness, at 5 years: one image with three slices (sagittal T1, axial T2, coronal T2) and a short findings legend below. An order for the sister's brain imaging or MRI maps here. An order for a new brain MRI of the patient does not map here.
+- aliases: sister's brain MRI; brain imaging of the affected sister; older sister's MRI; neuroimaging of the affected sibling
+
+## sister_muscle_biopsy
+
+- storage_location: 344475019/abat_4351/sister_muscle_biopsy.png
+- runtime_location: sister_muscle_biopsy.png
+- file_description: Skeletal muscle biopsy of the patient's older sister, who had a similar illness: histology and histochemistry, electron microscopy, and respiratory chain enzyme activities with citrate synthase (one image: the respiratory chain chart with the report below it). An order for the sister's muscle biopsy, her muscle respiratory chain studies or her mitochondrial work-up maps here. An order for a muscle biopsy of the patient himself does not map here.
+- aliases: sister's muscle biopsy; muscle biopsy of the affected sister; sister's respiratory chain enzymes in muscle; mitochondrial studies in the affected sibling
+
+## fibroblast_mtdna
+
+- storage_location: 344475019/abat_4351/fibroblast_mtdna.png
+- runtime_location: fibroblast_mtdna.png
+- file_description: Mitochondrial DNA copy number and mitochondrial membrane potential in cultured skin fibroblasts of the patient and his older sister, with a healthy control, in normal and in low-serum medium (one image: two charts with their legend below). An order for mtDNA copy number, mtDNA depletion testing or membrane potential in fibroblasts, or a skin biopsy for fibroblast mitochondrial studies, maps here. mtDNA testing in blood or muscle does not map here.
+- aliases: fibroblast mtDNA copy number; mtDNA depletion testing in fibroblasts; mitochondrial DNA content in skin fibroblasts; fibroblast mitochondrial membrane potential; skin biopsy for mitochondrial studies
+
+## fibroblast_respiratory_chain
+
+- storage_location: 344475019/abat_4351/fibroblast_respiratory_chain.png
+- runtime_location: fibroblast_respiratory_chain.png
+- file_description: Respiratory chain enzyme activities (complexes I to IV) and citrate synthase in cultured skin fibroblasts of the patient and his older sister, relative to controls (one image: a chart with its legend below). An order for respiratory chain or OXPHOS enzyme analysis in fibroblasts maps here. An order for respiratory chain enzymes in the patient's muscle does not map here.
+- aliases: fibroblast respiratory chain enzymes; OXPHOS enzyme activities in fibroblasts; electron transport chain analysis in skin fibroblasts; fibroblast complex I to IV activities
+
+## fibroblast_nucleotide_rescue
+
+- storage_location: 344475019/abat_4351/fibroblast_nucleotide_rescue.png
+- runtime_location: fibroblast_nucleotide_rescue.png
+- justification_required: gives a specific reason to test whether added deoxynucleotides restore mtDNA in the cells, such as a suspected defect of mtDNA maintenance or of mitochondrial nucleotide supply (e.g., an mtDNA depletion syndrome), or a low mtDNA copy number found in an earlier result
+- file_description: Nucleotide supplementation of cultured skin fibroblasts of the patient and his older sister, with a healthy control: mtDNA copy number in low-serum medium alone or with added deoxynucleoside monophosphates, diphosphates or triphosphates (one image: a chart with its legend below). An order for a nucleotide or nucleoside rescue experiment, or dNTP supplementation of fibroblasts, maps here.
+- aliases: nucleotide rescue in fibroblasts; deoxynucleotide supplementation of fibroblasts; dNTP supplementation experiment; nucleoside rescue of mtDNA depletion
+
+## fibroblast_abat_expression
+
+- storage_location: 344475019/abat_4351/fibroblast_abat_expression.png
+- runtime_location: fibroblast_abat_expression.png
+- justification_required: names ABAT (GABA transaminase) as the gene whose mRNA or protein is to be measured
+- file_description: ABAT mRNA by quantitative RT-PCR and ABAT protein by Western blot in cultured skin fibroblasts of the patient and his older sister, with a control (one image: the chart and the blot with their legend below). An order for ABAT expression, ABAT transcript or ABAT protein levels in the patient's cells maps here.
+- aliases: ABAT mRNA in fibroblasts; ABAT qRT-PCR; ABAT Western blot; ABAT protein level; GABA transaminase protein expression
+
+## abat_rescue
+
+- storage_location: 344475019/abat_4351/abat_rescue.png
+- runtime_location: abat_rescue.png
+- justification_required: names ABAT (GABA transaminase) as the gene whose wild-type copy is to be put into the patient's cells
+- file_description: Rescue experiment: cultured skin fibroblasts of the patient and his older sister, with a healthy control, transduced with wild-type ABAT or a control vector, with mtDNA copy number and mitochondrial membrane potential (one image: two charts with their legend below). An order for complementation or rescue of the patient's cells with wild-type ABAT maps here.
+- aliases: wild-type ABAT rescue in fibroblasts; complementation with wild-type ABAT; lentiviral ABAT expression in patient cells; gene rescue experiment
+
+## variant_functional_test
+
+- storage_location: 344475019/abat_4351/variant_functional_test.png
+- runtime_location: variant_functional_test.png
+- justification_required: names the ABAT variant to be tested, as c.631C>T, as p.(Leu211Phe) (p.L211F) or as GRCh38 chr16:8768220 C>T
+- file_description: Functional test of the ABAT variant in healthy control fibroblasts: endogenous ABAT knocked down and replaced by wild-type or variant ABAT, with mtDNA copy number (one image: a chart with its key and the legend below). An order for a functional study, functional assay or in vitro test of the patient's ABAT variant maps here.
+- aliases: functional study of the ABAT variant; in vitro test of ABAT p.Leu211Phe; variant functional assay; knockdown and re-expression of variant ABAT
+
+## sanger_segregation
+
+- storage_location: 344475019/abat_4351/sanger_segregation.md
+- runtime_location: sanger_segregation.md
+- justification_required: names the ABAT variant to be tested, as c.631C>T, as p.(Leu211Phe) (p.L211F) or as GRCh38 chr16:8768220 C>T
+- file_description: Targeted Sanger sequencing of an ABAT variant in the patient, his mother and his father: confirmation and segregation. An order for Sanger confirmation of the variant in the patient, or for targeted, carrier or segregation testing of the variant in either parent, maps here.
+- aliases: Sanger confirmation; parental testing; segregation analysis; carrier testing of the parents; targeted variant testing in the mother; targeted variant testing in the father; familial variant testing
+
+## sister_genotype
+
+- storage_location: 344475019/abat_4351/sister_genotype.md
+- runtime_location: sister_genotype.md
+- justification_required: names the ABAT variant to be tested, as c.631C>T, as p.(Leu211Phe) (p.L211F) or as GRCh38 chr16:8768220 C>T
+- file_description: Genotype of the patient's older sister, who had a similar illness, at an ABAT variant (from her exome sequencing, confirmed by Sanger sequencing). An order to test the affected sister for the variant, for her genetic results, or for co-segregation in the affected siblings maps here.
+- aliases: sister's genotype; testing of the affected sister; co-segregation in the affected sibling; sister's exome result; sibling variant testing
+
+## exome_trio
+
+- kind: dataset
+- storage_location: 344475019/abat_4351/exome_trio
+- runtime_location: exome_trio
+- file_description: Exome sequencing of the trio (the patient, his mother and his father): Illumina paired-end 2x126 bp exome capture reads aligned to GRCh38 (no-alt analysis set with hs38d1 decoys) with bwa-mem2, duplicates marked. One folder per person (proband/, mother/, father/), each with a BAM and its index. An order for trio exome sequencing, or exome sequencing of the patient together with both parents, maps here. An order for one person alone maps to that person's exome item. An order for genome sequencing, of the trio or of anyone in it, does not map here.
+- aliases: trio exome sequencing; trio WES; trio whole exome; trio clinical exome; exome sequencing of the patient and both parents; WES of the patient and both parents
+
+## exome_proband
+
+- kind: dataset
+- storage_location: 344475019/abat_4351/exome_trio/proband
+- runtime_location: exome_proband
+- file_description: Exome sequencing of the patient alone: Illumina paired-end 2x126 bp exome capture reads aligned to GRCh38 (no-alt analysis set with hs38d1 decoys) with bwa-mem2, duplicates marked (proband.exome.GRCh38.bam and .bai). An order for exome sequencing of the patient only maps here. A trio order maps to exome_trio. A gene panel order for the patient (e.g., an epilepsy, neurometabolic or nuclear mitochondrial gene panel) also maps here. A targeted, Sanger or segregation test of a single variant does not map here, and neither does an order for genome sequencing.
+- aliases: exome sequencing of the patient; exome sequencing of the proband; WES of the patient; singleton exome; epilepsy gene panel; neurometabolic gene panel; nuclear mitochondrial gene panel
+
+## exome_mother
+
+- kind: dataset
+- storage_location: 344475019/abat_4351/exome_trio/mother
+- runtime_location: exome_mother
+- file_description: Exome sequencing of the patient's mother alone: Illumina paired-end 2x126 bp exome capture reads aligned to GRCh38 (no-alt analysis set with hs38d1 decoys) with bwa-mem2, duplicates marked (mother.exome.GRCh38.bam and .bai). An order for exome sequencing of the patient's mother only maps here. A trio order maps to exome_trio. A targeted, Sanger or segregation test of a single variant does not map here.
+- aliases: exome sequencing of the mother; WES of the mother; maternal exome
+
+## exome_father
+
+- kind: dataset
+- storage_location: 344475019/abat_4351/exome_trio/father
+- runtime_location: exome_father
+- file_description: Exome sequencing of the patient's father alone: Illumina paired-end 2x126 bp exome capture reads aligned to GRCh38 (no-alt analysis set with hs38d1 decoys) with bwa-mem2, duplicates marked (father.exome.GRCh38.bam and .bai). An order for exome sequencing of the patient's father only maps here. A trio order maps to exome_trio. A targeted, Sanger or segregation test of a single variant does not map here.
+- aliases: exome sequencing of the father; WES of the father; paternal exome
+
+## reference_grch38
+
+- kind: dataset
+- storage_location: 337982452/GRCh38
+- runtime_location: GRCh38
+- cost: 0
+- file_description: Reference genome GRCh38 (no-alt analysis set with hs38d1 decoys, chromosomes named chr1-chr22, chrX, chrY, chrM): GRCh38_no_alt_plus_hs38d1_analysis_set.fa with .fai and .dict This is the only reference genome held. An order for another build, such as GRCh37, hg19 or T2T-CHM13, does not map here.
+- aliases: GRCh38; hg38; GRCh38 reference; reference FASTA; reference genome
+
+## gencode
+
+- kind: dataset
+- storage_location: 337982451/GENCODE
+- runtime_location: gencode
+- cost: 0
+- file_description: GENCODE release 50 gene annotation on GRCh38: gencode.v50.annotation.gtf.gz This is the only GENCODE release held. An order for another GENCODE release, or for GENCODE annotation on GRCh37, does not map here.
+- aliases: GENCODE; gene annotation; GTF; transcript annotation; exon coordinates
+
+## clinvar
+
+- kind: dataset
+- storage_location: 344475019/abat_4351/clinvar
+- runtime_location: clinvar
+- cost: 0
+- file_description: ClinVar October 2026 release: GRCh38 VCF (clinvar_20261004.vcf.gz + .tbi) and variant_summary_2026-10.txt.gz with one row per variant per build (GRCh37 and GRCh38) This is the only ClinVar release held. An order for an earlier ClinVar release does not map here.
+- aliases: ClinVar; ClinVar VCF
+
+## gnomad
+
+- kind: dataset
+- storage_location: 338028488/v4.1
+- runtime_location: gnomad
+- cost: 0
+- file_description: gnomAD v4.1 (GRCh38): per-chromosome exome and genome sites VCFs with allele counts and frequencies, structural variants, and gene constraint metrics This is the only gnomAD release held. An order for an earlier gnomAD release, such as v2.1.1 or v3, or for gnomAD on GRCh37 does not map here.
+- aliases: gnomAD; population allele frequencies; gnomAD exomes; gnomAD genomes

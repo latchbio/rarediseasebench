@@ -1,0 +1,71 @@
+{
+ "id": "pla2g6_4625",
+ "data_node": [
+  "latch://337982452.node",
+  "latch://337982451.node",
+  "latch://338028488.node",
+  "latch://344494996.node"
+ ],
+ "graders": [
+  {
+   "type": "rubric",
+   "config": {
+    "criteria": [
+     {
+      "description": "Names PLA2G6-associated neurodegeneration (PLAN) as the diagnosis, by any accepted name, including its adult-onset parkinsonism form (e.g., PARK14, autosomal recessive Parkinson disease 14, or PLA2G6-related dystonia-parkinsonism) and atypical neuroaxonal dystrophy.",
+      "score_delta": 1,
+      "steps_applied": [
+       0
+      ]
+     },
+     {
+      "description": "Reports both PLA2G6 variants, each heterozygous: c.109C>T p.(Arg37Ter) at GRCh38 chr22:38169318 G>A inherited from the father, and the deep intronic c.2035-274G>A at GRCh38 chr22:38113928 C>T inherited from the mother (nomenclature on NM_003560 or ENST00000332509, or the genomic change, is accepted), as the cause; with loss of function as the likely mechanism, the nonsense variant truncating the protein or causing nonsense-mediated decay and the intronic variant creating a splice donor that adds an intron 14 pseudoexon (cryptic exon) to the transcript between exons 14 and 15; supported by transcript evidence from the patient for that pseudoexon (junction reads into intron 14 in the patient's fibroblast RNA-seq that the other samples lack, or the larger RT-PCR product or cDNA sequence with intronic sequence between exons 14 and 15).",
+      "score_delta": 1,
+      "steps_applied": [
+       0
+      ]
+     },
+     {
+      "description": "Reports the PLA2G6 pair as the cause and also presents a variant in another gene as causing or contributing to the disorder.",
+      "score_delta": -1,
+      "steps_applied": [
+       0
+      ]
+     }
+    ],
+    "answer_field": "diagnosis",
+    "truncation_length": 10000,
+    "passing_reward_threshold": 1
+   }
+  }
+ ],
+ "notes": "1. WHAT ARE YOU TESTING?\nWhether an agent diagnoses PLA2G6-associated neurodegeneration in a 43-year-old man with gait ataxia and scanning speech from 32, then asymmetric, levodopa-poor parkinsonism from 36, severe cognitive decline, irritability and aggression, limited upgaze and pyramidal signs, and finds both PLA2G6 alleles. The cause is compound heterozygous PLA2G6: the nonsense variant c.109C>T p.(Arg37Ter) from the father and the deep intronic variant c.2035-274G>A from the mother. The intronic variant turns a cryptic splice donor into a strong one and adds a 118-nt pseudoexon from intron 14 to the transcript, which shifts the reading frame.\n\nThe nonsense variant is easy to find and has a pathogenic ClinVar record. The second allele lies deep in intron 14, 274 bp before exon 15, has no record in the case's ClinVar copy and is very rare in gnomAD. A filter restricted to coding sequence and canonical splice sites drops it. The agent has to look for a second allele beyond the coding sequence of a recessive gene, and support the intronic variant with transcript evidence: the pseudoexon junction reads in the patient's fibroblast RNA-seq, which the nine other samples lack, or the larger RT-PCR product and the cDNA sequence.\n\nThe brain MRI is on request. It shows pallidal hypointensity, which the published report reads as iron, a dark left caudate head at 43, cerebellar atrophy with bright cerebellar cortex and mildly bright dentate nuclei, hippocampal atrophy and hyperintensity at 43 and an enlarged clava. In testing from the clinical picture with the MRI and its earlier legend, which described the findings, agents put PLA2G6 first or second; Kufor-Rakeb syndrome, MPAN and adult neuronal ceroid lipofuscinosis were the main alternatives.\n\n2. KEY IMPLEMENTATION DETAILS / GT DERIVATION\nThe records paraphrase the published case. The figure records are the published figure panels with legends written for the case.\n\nThe published patient is a woman. Here the patient is a man, to match the male genome. PLA2G6-associated neurodegeneration is autosomal recessive and not sex-limited.\n\nThe published report gives no age for the EEG and the evoked potentials; the case places them with the examination at 43. The published \"trochlea sign\" is given as rigidity with a cogwheel quality.\n\nThe two brain MRI scans, at 34 and 43, come as one image on request: the published figure with the scan years replaced by the patient's age at each scan, and a legend that gives only the sequence and the age of each panel. The published report gives the nigral hypointensity without the scan; the case leaves it out. The report's remark that the imaging is typical of the disease is left out.\n\nThe targeted sequencing of the PLA2G6 coding regions and the negative MLPA that preceded the RNA studies are left out. The agent finds c.109C>T in the sequencing data, and an MLPA order comes back unavailable.\n\nThe case offers the patient's exome and short-read genome only, each on request. Long reads and the parents' sequencing data are not offered. Both variants are present in the exome and the genome; the exome reads reach the intronic site.\n\nThe parents' genotypes come only at the two variant sites, one record per variant: the father is heterozygous for c.109C>T and the mother for c.2035-274G>A, and each lacks the other's variant. Parent of origin and phase come from these records. Each record answers only an order that names its variant, so parental testing cannot reveal the intronic variant before the agent has found it. An order naming both variants at once is a bundle and is refused.\n\nThe published RNA work used PCR amplicons of PLA2G6 cDNA. The case instead offers whole-transcriptome RNA-seq of the patient's cultured fibroblasts with fibroblast lines from nine other individuals; the patient's expressed variants match his genome. In the patient's sample, each pseudoexon junction has about one third of the reads of the exon 14 to exon 15 junction, as in the published Sashimi plot, so each pseudoexon junction keeps about 12 reads against about 35 at the skipping junction. The two pseudoexon junctions hold about 41% of the reads crossing a junction in this window. The published report gives the pseudoexon isoform as about 43% of total PLA2G6 transcript, which is close to what its two inclusion arcs come to over all three. A transcript carrying the pseudoexon offers two junctions here where a skipping transcript offers one, so the share of transcripts that carry it is about a quarter. Total PLA2G6 in the RNA-seq stays at the sample's own level, 13.0 sense reads per million, inside the other nine samples' range of 5.6 to 19.4. The published qPCR found about 80% lower expression and the qPCR record keeps that result; a reduction is not applied to the RNA-seq, because any value it could take lies inside the range of the comparison samples and cannot be called as reduced from the RNA-seq, while it would cost junction reads. About 55% of the patient's RNA reads at c.109 carry T, as published.\n\nThe RT-PCR and cDNA sequencing record, the qPCR record and the intron 14 Sanger record are the published figure panels. The published amplicon sequencing with its Sashimi plot and the published splice predictions are not offered; the agent runs its own tools.\n\nThe pseudoexon is GRCh38 chr22:38113932-38114049 (c.2035-395 to c.2035-278), 118 bp. The variant is at position +4 of its new donor (GTGGGC to GTGAGC). In HGVS form the protein change is p.(Gly679ThrfsTer133); the published report gives the frameshift with residue 810, the last residue of the new protein.\n\nc.2035-274G>A is on the maternal copy, in cis with the A allele of rs5750541 (GRCh38 chr22:38114251 G>A), which the patient inherited from his mother. c.109C>T is on the paternal copy.\n\nThe case's ClinVar copy lacks VCV 4688402 (c.2035-274G>A, Likely pathogenic, created 2026-02-08) and keeps VCV 30370 (c.109C>T, Pathogenic).\n\nGround truth: PLA2G6-associated neurodegeneration, adult-onset parkinsonism form, from compound heterozygous PLA2G6 NM_003560.4 c.109C>T p.(Arg37Ter) (GRCh38 chr22:38169318 G>A), paternal, and c.2035-274G>A (GRCh38 chr22:38113928 C>T), maternal. NM_003560.4 is the MANE Select transcript (ENST00000332509). PLA2G6 is on the minus strand.\n\nThe genome's own de novo variants in DNMT3A (p.Cys911Tyr) and GTF2F1 (c.914_916del) are kept. Neither gene fits adult parkinsonism with brain iron. Without parental sequencing they show as rare heterozygous variants.\n\nTests the published report does not give (e.g., ceruloplasmin, ferritin, acanthocytes, nerve conduction, dopamine transporter imaging, CSF studies, a biopsy for axonal spheroids) come back unavailable.\n\n3. TOLERANCE / GRADER CALIBRATION\nThe case grades the diagnosis only. Its rubric passes at 1.0 and has two credits: the clinical diagnosis and the molecular diagnosis. Accept PLA2G6-associated neurodegeneration by any accepted name, including its adult-onset parkinsonism form.\n\nThe molecular credit needs both variants with GRCh38 coordinates, zygosity, parent of origin, loss of function as the likely mechanism with the pseudoexon for the intronic variant, and transcript evidence for the pseudoexon. Coordinates must match exactly. Transcript notation on NM_003560 or ENST00000332509, or the genomic change, is accepted. The pseudoexon's size and boundaries and the protein notation of the frameshift are not required.\n\nA splice prediction alone does not meet the evidence point. The case tests whether the agent supports a deep intronic variant without a ClinVar record with RNA evidence, which the case offers.\n\n\"In trans\" or \"compound heterozygous\" is not a separate point: it follows from one variant being paternal and the other maternal.\n\nOne penalty: an answer that gives the PLA2G6 pair and also presents another gene's variant as contributing fails.\n\nOne step with no request limit. The shortest path is the genome or exome, the fibroblast RNA-seq and the two parental records (four orders).\n\n4. DATASET-AWARE CHECKS\nCHECK 1: ClinVar is a copy of the October 2026 release for this case without VCV 4688402. gnomAD v4.1 lists c.2035-274G>A in exomes at 2 alleles of about 398,000 (AF about 5e-6) and not in genomes; c.109C>T is at exome AF about 4e-5 and genome AF about 1e-5, with no homozygotes.\n\nCHECK 2: both sites are covered in the patient's exome and genome.\n\nCHECK 3: the patient has no other variant in a PLA2G6 exon or within 10 bp of one.\n\nCHECK 4: in the RNA-seq, only the patient's sample has reads joining exon 14 or exon 15 to the pseudoexon. Two of the nine other samples carry LRRK2 p.Gly2019Ser in their RNA; the patient does not.\n\nCHECK 5: long reads and the parents' sequencing data are not offered; orders for them come back unavailable.\n\nCHECK 6: the network allows only conda.anaconda.org, for installing tools.\n\n5. COMMON TRAPS\nStopping at the single pathogenic nonsense allele: calling the patient a carrier, or naming the disease without the second allele.\n\nFiltering variants to coding sequence and canonical splice sites, so the intronic variant never appears.\n\nReporting c.2035-274G>A from its rarity or a splice prediction alone, without looking at the RNA.\n\nStopping at Kufor-Rakeb syndrome, MPAN, PKAN or adult neuronal ceroid lipofuscinosis from the imaging and the photosensitive EEG.\n\nReading LRRK2 p.Gly2019Ser in two of the comparison RNA samples as relevant to the patient.\n\nReading the rare DNMT3A or GTF2F1 variant as the cause or as contributing.",
+ "metadata": {
+  "kit": "none",
+  "task": "functional_and_clinical_interpretation",
+  "assay": "exome_sequencing",
+  "eval_type": "scientific",
+  "time_horizon": "small"
+ },
+ "rdb": {
+  "steps": [
+   {
+    "prompt": "A 43-year-old man is referred to your clinic with a progressive neurological illness.\n\nHe was well until age 32, when his gait became unsteady and his speech took on a scanning quality. From age 36 he developed a parkinsonian syndrome that progressed over the following years and was asymmetric, worse on the right side, with stiffness, poverty of movement, tremor at rest and on holding a posture, and a decline in thinking. Levodopa helped him little. He later became irritable and at times aggressive, and quetiapine was started. He has gradually lost the ability to walk and has developed difficulty swallowing and severe akinesia. No one else in the family has had a neurological disease.\n\nOn examination at 43 he has severe cognitive impairment affecting memory, language, frontal and executive function, and visuospatial skills. Smooth pursuit is broken up by saccades, and he cannot look upward fully. His face is markedly expressionless. He has almost no spontaneous speech, and what he does say is scanning and monotonous. He has dysphagia and drools. His gait is severely hypokinetic, and he walks only with support. Rigidity of the trunk and limbs is marked, with a cogwheel quality, and there is akinesia throughout. He has a resting tremor of the mouth and jaw and of both arms. Tendon reflexes are brisk, and both plantar responses are extensor.\n\nAn EEG shows some slow-wave abnormalities over the temporal regions, more on the left, with photosensitivity and a photomyoclonic response; he has had no clinical seizures. Somatosensory evoked potentials show prolonged latency of the central components.\n\nPlease help diagnose the patient. Use get_info to request the records and investigations you need.\n\nSubmit your answer with submit_answer:\n\nIn the diagnosis field: your diagnosis, its underlying cause, and the findings that establish it, all as specifically as possible. If the cause is genetic, report for each causal variant all available out of: the gene, the variant in standard nomenclature (HGVS for sequence variants, ISCN for structural rearrangements) with genomic coordinates and the reference genome used, its zygosity, its inheritance, its likely mechanism, and the evidence for that mechanism.",
+    "upfront": [
+     "reference_grch38",
+     "gencode",
+     "clinvar",
+     "gnomad"
+    ],
+    "max_requests": null
+   }
+  ],
+  "max_requests": null,
+  "budget": null,
+  "network": {
+   "allow": [
+    "conda.anaconda.org"
+   ]
+  }
+ }
+}
